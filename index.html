@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>花間醉月｜S6W3 同盟報名</title>
+<style>
+:root{--g:#e8c879;--p:#f2a7bd;--r:#a72c2c;--bg:#080706}
+*{box-sizing:border-box}body{margin:0;color:#f8efe0;background:#080706;font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(#05040399,#050403ee),url("battle-poster.png") center/cover fixed}
+body:after{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 50% 10%,#e8c87918,transparent 35%);pointer-events:none}
+.wrap{width:min(920px,92%);margin:auto}.hero{text-align:center;padding:55px 0 35px}.seal{width:min(230px,55vw);border-radius:50%;filter:drop-shadow(0 8px 28px #000)}
+h1{font:900 clamp(3rem,10vw,6.5rem)/1 serif;margin:10px 0;color:#fff0cf;text-shadow:0 4px 18px #000}.sub{color:var(--p);font-weight:900;font-size:clamp(1rem,3vw,1.4rem)}
+.badge{display:inline-block;border:1px solid var(--g);border-radius:99px;padding:4px 15px;color:var(--g);margin:12px}
+.card{background:#100c0bdc;border:1px solid #e8c87955;border-radius:16px;padding:25px;margin:18px 0;box-shadow:0 12px 30px #0009}
+h2{color:var(--g);font-family:serif;text-align:center}.quote{text-align:center;color:#ffd8df;font:1.35rem serif}.grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+label{display:block;margin:12px 0 6px;font-weight:800;color:#f1ddba}input,select,textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #69552f;background:#090806;color:white;font:inherit}textarea{min-height:105px}
+.btn{border:1px solid var(--g);border-radius:9px;background:linear-gradient(135deg,#781b1b,#24100d);color:white;font-weight:900;padding:13px 22px;cursor:pointer}.full{width:100%;margin-top:18px}
+.note{color:#c6b9a8;font-size:.9rem}.success{display:none;text-align:center;padding:20px;background:#13200f;border:1px solid #719b61;border-radius:12px}
+a{color:var(--g)}footer{text-align:center;padding:35px;color:#9e9384}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.card{padding:18px}}
+</style></head>
+<body><header class="hero wrap"><img class="seal" src="emblem.jpeg"><div class="badge">三國・謀定天下｜S6W3</div><h1>花間醉月</h1>
+<div class="sub">花啟戰場之光・間逆命運之輪・醉破無盡沙場・月鑄不朽傳奇！</div></header>
+<main class="wrap">
+<section class="card"><h2>⚔ 同盟招生</h2><p>原花滿樓本部｜半戰鬥體系，上打歐洲杯，下打郊區。</p><p class="quote">「玩，不求輸贏，但求能有個一同闖關的熱血過程。」</p>
+<p>遊戲不是人生的全部，但能在遊戲上認識志同道合的夥伴、共進退的兄弟，一起遊玩、聊天，才不白費這段時光。</p></section>
+<section class="card"><h2>🌸 同盟特色</h2><p>內部友善　｜　專人配將　｜　專人指導　｜　成員融洽　｜　娛樂氛圍　｜　戰場指揮明確　｜　上下級分工管理</p></section>
+<section class="card"><h2>📝 線上報名</h2>
+<form id="f">
+<div class="grid"><div><label>遊戲內名稱 *</label><input name="game_name" required></div><div><label>遊戲內 ID *</label><input name="game_id" required></div></div>
+<div class="grid"><div><label>Discord 名稱 *</label><input name="discord" required></div><div><label>目前伺服器 *</label><input name="server" value="S6W3" required></div></div>
+<div class="grid"><div><label>每日遊玩時間</label><select name="hours"><option>1小時以下</option><option>1～3小時</option><option>3～5小時</option><option>5小時以上</option></select></div><div><label>玩家類型</label><select name="type"><option>戰鬥</option><option>休閒</option><option>技術／配將</option><option>指揮</option><option>綜合</option></select></div></div>
+<label>戰場／遊戲經驗</label><textarea name="experience"></textarea><label>自我介紹／加入原因</label><textarea name="intro"></textarea>
+<button class="btn full" type="submit">🔥 提交報名</button><p class="note">提交後請加入 Discord，方便管理員聯繫。</p></form>
+<div id="ok" class="success"><h3>🎉 報名成功！</h3><p>資料已送出，請加入花間醉月 Discord。</p><a href="https://discord.gg/EybQQQnkV" target="_blank">加入 Discord →</a></div>
+</section>
+<section class="card"><h2>📞 聯繫方式</h2><p>盟主遊戲內 ID：<b>10017056866</b></p><p>遊戲內名稱：<b>醉丨花滿天</b></p><p>盟主 Discord：<b>motea2266</b></p><p>社群：<a href="https://discord.gg/EybQQQnkV" target="_blank">discord.gg/EybQQQnkV</a></p></section>
+</main><footer>花間醉月｜S6W3<br>兄弟並肩，戰無不勝；花間有你，便是傳奇。</footer>
+<script>
+const API_URL="https://script.google.com/macros/s/AKfycbyXHCcZkvvF0OP4O1coxcSA4ROJ2K34yQ4MN5dqgB1ZYEHcasoo6IzWfyRKmtTBHq-t/exec"
+document.getElementById("f").addEventListener("submit",async e=>{
+ e.preventDefault(); const btn=e.target.querySelector("button"); btn.disabled=true; btn.textContent="提交中…";
+ const data=Object.fromEntries(new FormData(e.target).entries()); data.time=new Date().toISOString();
+ try{
+   if(API_URL){const r=await fetch(API_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)});}
+   else {const a=JSON.parse(localStorage.getItem("huajianApplications")||"[]");a.push(data);localStorage.setItem("huajianApplications",JSON.stringify(a));}
+   e.target.style.display="none";document.getElementById("ok").style.display="block";
+ }catch(err){alert("送出失敗，請稍後再試或直接加入 Discord。");btn.disabled=false;btn.textContent="🔥 提交報名";}
+});
+</script></body></html>
